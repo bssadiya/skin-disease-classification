@@ -68,6 +68,6 @@ https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
 - Improve accuracy using transfer learning (ResNet, VGG16)
 - Add real-time image prediction
 - Integrate with a web or mobile interface
--
+
 
 
