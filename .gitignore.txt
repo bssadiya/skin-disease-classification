@@ -1,0 +1,14 @@
+# Ignore datasets
+train/
+test/
+train1/
+test1/
+data/
+
+# Ignore Jupyter junk
+.ipynb_checkpoints/
+
+# Ignore models & archives
+*.zip
+*.h5
+*.pth
