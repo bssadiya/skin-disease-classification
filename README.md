@@ -1,73 +1,94 @@
-# Skin Disease Classification Using CNN
+## Skin Disease Classification using Transfer Learning
+### Project Overview
 
-##  Project Overview
-This project implements a **deep learning–based skin disease classification system** using **Convolutional Neural Networks (CNNs)**.  
-The model analyzes dermatological images and classifies them into different skin disease categories, supporting automated and efficient medical image analysis.
+This project focuses on automated skin disease classification using deep learning and transfer learning techniques. Multiple pretrained convolutional neural network architectures were implemented and compared to evaluate their performance on skin disease image datasets.
 
----
+The project includes:
 
-##  Objectives
-- Automate skin disease classification using image data
-- Apply CNNs for medical image recognition
-- Reduce dependency on manual diagnosis
-- Demonstrate practical use of deep learning in healthcare
-
----
-
-##  Technologies Used
-- Python  
-- TensorFlow / Keras  
-- Convolutional Neural Networks (CNN)  
-- OpenCV  
-- NumPy, Pandas  
-- Matplotlib  
+* Image preprocessing and augmentation
+* Transfer learning using pretrained CNN models
+* Comparative evaluation of multiple architectures
+* Performance visualization
+* Prediction on custom skin disease images
 
 ---
 
-##  Dataset
-- **Dataset Name:** HAM10000 (Human Against Machine with 10,000 training images)
-- **Source:** Kaggle  
-- **Classes:** 7 skin disease categories
-- **Note:** Due to large size, the dataset is **not included** in this repository.
+# Models Used
 
-### Dataset Link:
-https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000
+The following transfer learning models were implemented and compared:
 
----
+* VGG16
+* ResNet50
+* InceptionV3
 
----
-
-##  Model Workflow
-1. Image preprocessing and resizing  
-2. Data augmentation for better generalization  
-3. CNN model construction  
-4. Model training and validation  
-5. Performance evaluation using accuracy and loss metrics  
+These models were evaluated using accuracy metrics, confusion matrices, and prediction outputs.
 
 ---
 
-##  Results
-- Achieved high **training and validation accuracy**
-- Visualized loss and accuracy curves
-- Evaluated correct vs incorrect predictions
+# Technologies Used
 
-*Exact metrics can be found in the notebook outputs*
+* Python
+* TensorFlow / Keras
+* NumPy
+* OpenCV
+* Matplotlib
+* Scikit-learn
 
 ---
 
-##  How to Run the Project
-1. Clone the repository
-2. Download the dataset from Kaggle
-3. Place dataset into `train/` and `test/` folders locally
-4. Open the notebook and run all cells sequentially
+# Workflow
 
+1. Dataset preprocessing
+2. Image augmentation using ImageDataGenerator
+3. Transfer learning with pretrained CNN architectures
+4. Model training and validation
+5. Comparative performance evaluation
+6. Confusion matrix visualization
+7. Prediction on custom test images
 
+---
 
-## Future Enhancements
-- Deploy using Streamlit or Flask
-- Improve accuracy using transfer learning (ResNet, VGG16)
-- Add real-time image prediction
-- Integrate with a web or mobile interface
+# Features
 
+* Multiple deep learning model comparison
+* Transfer learning implementation
+* Medical image classification
+* Prediction on custom uploaded images
+* Accuracy visualization
+* Confusion matrix analysis
 
+---
+
+# Prediction System
+
+The notebook supports prediction on custom skin disease images using the trained transfer learning model.
+
+Example workflow:
+
+* Upload skin disease image
+* Preprocess image
+* Generate prediction
+* Display predicted disease class
+
+---
+
+# Results
+
+The project compares the performance of:
+
+* VGG16
+* ResNet50
+* InceptionV3
+
+to determine the most effective architecture for skin disease classification.
+
+---
+
+# Future Improvements
+
+* Increase dataset size
+* Improve class balancing
+* Deploy as a web application
+* Add real-time image upload functionality
+* Experiment with EfficientNet and DenseNet architectures
 
